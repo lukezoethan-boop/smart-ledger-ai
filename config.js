@@ -1,2 +1,2 @@
-window.SMART_LEDGER_SUPABASE_URL='https://sqmfbmgvuoczghfhpkqt.supabase.co';
-window.SMART_LEDGER_SUPABASE_KEY='sb_publishable_VOb9zL6ehn9oHoLOpusgzg_F3Payx_g';
+window["SMART u005fLEDGER u005fSUPABASE u005fURL"]="https://sqmfbmgvuoczghfhpkqt.supabase.co";
+window["SMART u005fLEDGER u005fSUPABASE u005fKEY"]="sb u005fpublishable u005fVOb9zL6ehn9oHoLOpusgzg u005fF3Payx u005fg";
