@@ -1,60 +1,24 @@
 doctype html>
-html lang="fr">
+html lang="en">
 head>
   meta charset="UTF-8" />
   meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  meta name="theme-color" content="#0b1220" />
-  meta name="description" content="SMART LEDGER AI — la gestion commerciale rendue simple." />
-  title>SMART LEDGER AI/title>
-  link rel="preconnect" href="https://fonts.googleapis.com">
-  link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  link rel="stylesheet" href="./styles.css" />
+  title>Smart Ledger AI/title>
+  link rel="stylesheet" href="styles.css" />
 /head>
 body>
-  div id="app">
-    section class="auth-shell" id="auth-view">
-      div class="auth-brand">div class="brand-mark">SL/div>span>SMART LEDGER b>AI/b/span/div>
-      div class="auth-card">
-        div class="eyebrow">VOTRE COMMERCE, PLUS CLAIR/div>
-        h1 id="auth-title">Reprenez le contrôle/br>de votre commerce./h1>
-        p class="muted">Les chiffres compliqués restent derrière. Vous voyez clairement ce qui entre, ce qui sort et ce qui vous reste./p>
-        form id="auth-form">
-          label id="name-wrap" class="field hidden">Nom du commerceinput id="business-name" autocomplete="organization" placeholder="Ex. Boutique Ethan" /input/label>
-          label class="field">Adresse e-mailinput id="email" type="email" required autocomplete="email" placeholder="vous@exemple.com" /input/label>
-          label class="field">Mot de passeinput id="password" type="password" required minlength="8" autocomplete="current-password" placeholder="8 caractères minimum" /input/label>
-          button class="primary wide" id="auth-submit">Se connecter span>→/span/button>
-        /form>
-        div class="auth-switch">span id="auth-switch-label">Vous débutez ?/span> button class="text-button" id="auth-switch">Créer un compte/button/div>
-        p class="tiny muted">Vos données restent privées. Chaque commerce possède son propre espace sécurisé./p>
-      /div>
-      div class="auth-foot">Pensé pour les commerçants. Conçu pour être compris./div>
-    /section>
-    section id="workspace" class="workspace hidden">
-      aside class="sidebar" id="sidebar">
-        div class="brand">div class="brand-mark">SL/div>div>SMART LEDGER b>AI/b/small>GESTION INTELLIGENTE/small/div/div>
-        div class="shop-switch">span class="shop-avatar">S/span>span>span id="shop-name">Mon commerce/b>small>Espace professionnel/small/span/span>span class="chevron">⌄/span/div>
-        div class="nav-caption">ESPACE DE TRAVAIL/div>
-        nav id="main-nav">
-          button class="nav-item active" data-page="dashboard">i>◫/i> Vue d'ensemble/button>
-          button class="nav-item" data-page="sales">i>↗/i> Ventes/button>
-          button class="nav-item" data-page="products">i>▦/i> Produits & stock/button>
-          button class="nav-item" data-page="expenses">i>↙/i> Dépenses/button>
-          button class="nav-item" data-page="cash">i>◉/i> Trésorerie/button>
-          button class="nav-item" data-page="contacts">i>♙/i> Clients & fournisseurs/button>
-          button class="nav-item" data-page="reports">i>▤/i> Rapports/button>
-        /nav>
-        div class="sidebar-bottom">div class="help-card">div class="help-icon">✦/div>b>Besoin d'un coup de main ?/b>p>Les chiffres vous semblent flous ? Consultez les explications simples./p>button class="text-button" id="help-open">Comprendre les chiffres →/button/div>button class="profile-row" id="sign-out">span class="profile-avatar">U/span>span>span id="user-email">Utilisateur/b>small>Déconnexion/small/span/span>span class="exit">↗/span/button/div>
-      /aside>
-      main class="main-area">
-        header class="topbar">button class="mobile-menu" id="mobile-menu">☰/button>div>div class="breadcrumb">SMART LEDGER span>/span> b id="page-crumb">Vue d'ensemble/b/div/div class="page-date" id="today-label">/div/div>div class="top-actions">span class="secure-pill">i>/i> Données synchronisées/span>button class="icon-button" id="top-help" title="Aide">?/button>span class="top-avatar">U/span/div/header>
-        div id="page-content" class="page-content">/div>
-      /main>
-    /section>
-    div id="toast" class="toast" role="status">/div>
-    div id="modal-root">/div>
+  div class="sign-in-card">
+    h1>Sign In/h1>
+    form id="signInForm">
+      label for="email">Email/label>
+      input type="email" id="email" name="email" required />
+      label for="password">Password/label>
+      input type="password" id="password" name="password" required />
+      button type="submit" id="loginBtn">Login/button>
+      button type="button" id="registerBtn">Register/button>
+    /form>
   /div>
-  script src="./config.js">/script>
-  script type="module" src="./app.js">/script>
+  script src="config.js">/script>
+  script type="module" src="app.js">/script>
 /body>
 /html>
